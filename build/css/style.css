@@ -172,6 +172,18 @@ button {
   transition: 0.25s;
 }
 
+.dfc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 @-webkit-keyframes fade {
   0% {
     opacity: 0;
@@ -297,6 +309,30 @@ nav {
   margin-top: 20px;
 }
 
+.section__brands {
+  padding: 101px 0 128px;
+  border-bottom: 1px solid rgba(197, 203, 226, 0.5);
+}
+
+.brands {
+  margin-top: 60px;
+}
+
+.brands__title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  color: #1A2578;
+}
+
+.brands__title span {
+  color: #BF0830;
+}
+
+.brands__item {
+  margin-top: 20px;
+}
+
 @media (max-width: 1639.98px) {
   .section__hero {
     padding: 100px 0 150px 0;
@@ -317,6 +353,10 @@ nav {
     right: 50px;
     max-width: 450px;
   }
+
+  .brands__title {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -326,6 +366,10 @@ nav {
 
   .btn {
     padding: 12px 26px;
+  }
+
+  .section {
+    padding: 75px 0;
   }
 
   .logo img {
@@ -368,6 +412,32 @@ nav {
     line-height: 24px;
     margin-top: 15px;
   }
+
+  .brands {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 26px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 20px;
+  }
+
+  .brands__title {
+    font-size: 26px;
+  }
+
+  .brands__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+            flex: 0 0 20%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media (max-width: 991.98px) and (max-width: 767.98px) {
@@ -379,6 +449,10 @@ nav {
 @media (max-width: 767.98px) {
   .container {
     max-width: 740px;
+  }
+
+  .section {
+    padding: 50px 0;
   }
 
   .menu__item:last-child .menu__item-link {
@@ -414,6 +488,23 @@ nav {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+
+  .brands__title {
+    font-size: 22px;
+  }
+
+  .brands__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 5px;
   }
 }
 
@@ -539,6 +630,10 @@ nav {
     max-width: none;
   }
 
+  .section {
+    padding: 35px 0;
+  }
+
   .hero__item-buttons {
     margin-top: 10px;
     -webkit-box-orient: vertical;
@@ -555,5 +650,10 @@ nav {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+
+  .brands__title {
+    font-size: 20px;
+    line-height: 125%;
   }
 }
