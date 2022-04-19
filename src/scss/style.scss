@@ -3,12 +3,15 @@
 @import './vars';
 @import './reset';
 @import './global';
-
-// Sections or Pages SCSS-files imports
 @import './header';
 @import './hero';
-@import './brands';
+@import './info';
 // @import './footer';
+
+// Sections or Pages SCSS-files imports
+
+@import './MainPage/brands';
+@import './MainPage/products'
 
 // Libs
 // @import './libs/swiper';

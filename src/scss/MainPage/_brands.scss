@@ -17,24 +17,9 @@
 	}
 
 	&__title {
-		text-align: center;
 		font-size: 36px;
 		font-weight: 700;
 		color: $title-color;
-		@media (max-width: $breakpoint1440) {
-			font-size: 30px;
-			
-		}
-		@media (max-width: $breakpoint992) {
-			font-size: 26px;
-		}
-		@media (max-width: $breakpoint768) {
-			font-size: 22px;
-		}
-		@media (max-width: $breakpoint480) {
-			font-size: 20px;
-			line-height: 125%;
-		}
 		span{
 			color: $accent-color;
 		}

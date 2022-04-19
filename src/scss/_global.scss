@@ -58,6 +58,29 @@ body {
 			color: $white-color;
 		}
 	}
+
+	&__products{
+		display: inline-flex;
+		padding: 15px 24px;
+		border: 1px solid $accent-color;
+		border-radius: 6px;
+		background-color: transparent;
+		gap: 8px;
+		color: $accent-color;
+		@media (max-width:  $breakpoint1440) {
+			
+		}
+		&:hover {
+			transform: translateY(-2px);
+			background-color: $accent-color;
+			color: $white-color;
+			box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+			path{
+				stroke: $white-color;
+				transition: 0.25s;
+			}
+		}
+	}
 	
 	@media (max-width: $breakpoint992) {
 		padding: 12px 26px;
@@ -66,6 +89,47 @@ body {
 		background-color: #dd0131;
 	}
 }
+
+.title{
+	font-size: 44px;
+	font-weight: 700;
+	line-height: 130%;
+	color: $title-color;
+	@media (max-width: $breakpoint1440) {
+		font-size: 30px;
+	}
+	@media (max-width: $breakpoint992) {
+		font-size: 26px;
+	}
+	@media (max-width: $breakpoint768) {
+		font-size: 22px;
+	}
+	@media (max-width: $breakpoint480) {
+		font-size: 20px;
+		line-height: 125%;
+	}
+	&.title__center{
+		text-align: center;
+	}
+	
+}
+
+.subtitle{
+	color: $text-color;
+	@media (max-width: $breakpoint768) {
+		font-size: 16px;
+	}
+	@media (max-width: $breakpoint480) {
+		font-size: 14px;
+		line-height: 175%;
+	}
+	&.subtitle__center{
+		text-align: center;
+	}
+	
+}
+
+
 .section{
 	@media (max-width: $breakpoint992) {
         padding: 75px 0;
